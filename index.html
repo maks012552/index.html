@@ -32,20 +32,22 @@ initial-scarlet=1.0"
     #tel1 {
         height: 350px;
     }
+    .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .item {
+  width: 33.33%;
+}
+
+@media (max-width: 768px) {
+  .container .item {
+    width: 33.33%;
+  }
+}
+
     
-
-    @media (max-width: 768px) {
-        .container {
-            flex-wrap: nowrap;
-        }
-        .container {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        .container .item{
-            width:33.33%;
-        }
-    }
 </style>
 
 </head>
